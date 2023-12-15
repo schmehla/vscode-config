@@ -29,7 +29,8 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 ## NeoQwertz only
 | key | what happens |
 | --- | --- |
-| \<alt-r> + esdf | up, left, down right |
+| \<alt-r> + esdf | up, left, down, right |
+| \<alt-r> + r | del |
 
 ## New vim only commands for me to learn.
 

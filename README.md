@@ -31,6 +31,7 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 | --- | --- |
 | \<alt-r> + esdf | up, left, down, right |
 | \<alt-r> + r | del |
+| \<alt-r> + w | backspace |
 
 ## New vim commands for me to learn.
 

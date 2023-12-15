@@ -22,6 +22,7 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 | \<alt-r> + esdf | up, left, down right |
 | \<win> + 123... | windows at position in taskbar |
 | \<ctrl> + l | focus url bar in browser |
+| / | focus search bar in google chrome |
 | \<ctrl> + w | close tab in browser |
 | \<alt> + 123.. | tabs at position in browser |
 

@@ -12,6 +12,7 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 | \<shift> + \<tab> | cycle tabs left (or cycle terminals, tab is needed for autocomplete) |
 | \<ctrl> + hjkl | move panel left, top, down, right |
 | \<ctrl> + i | toggle lower panel (terminal, debug output, etc) |
+| \<ctrl> + m | comment line (\<ctrl> + k is already in use for panel motions :( )|
 
 
 

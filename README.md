@@ -26,13 +26,13 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 | \<alt> + 123.. | tabs at position in browser |
 
 
-## NeoQwertz only
+## NeoQwertz
 | key | what happens |
 | --- | --- |
 | \<alt-r> + esdf | up, left, down, right |
 | \<alt-r> + r | del |
 
-## New vim only commands for me to learn.
+## New vim commands for me to learn.
 
 | key | what happens |
 | --- | --- |

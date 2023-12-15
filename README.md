@@ -44,7 +44,7 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 | # | go to prev occurence of current word |
 | ^ | go to first char in line |
 | $ | go to last char in line |
-| $ | go to last char in line |
+| % | go to corresponding character for character pairs |
 | f + \<char> | find char in line after cursor |
 | F + \<char> | find char in line before cursor |
 | (, ) | jump to beginning of next / previous sentence | 

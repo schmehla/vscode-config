@@ -48,4 +48,4 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 | {, } | jump to beginning of next / previous paragraph | 
 
 # Open Issues
-- [ ] <ctrl> + hjkl does not work when having a .md preview open and clicked (seems like the tab is not properly focused and vscode does not know the current focus)
+- [ ] \<ctrl> + hjkl does not work when having a .md preview open and clicked (seems like the tab is not properly focused and vscode does not know the current focus)

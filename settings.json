@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true,
+    "markdown.preview.scrollPreviewWithEditor": true,
+    "vim.handleKeys": {
+        "<C-f>": false, // in vscodevim: jump downwards (?) -> in vscode: find
+        "<C-t>": false, // in vscodevim: jumps back in tag stack -> in vscode: toggle between projects
+        "<C-b>": false, // invscodevim: jumps upwards (?) -> in vscode: toggle explorer panel
+        "<C-o>": false, // in vscodevim: jumps back in jump list -> in vscode: opens file
+        "<C-i>": false, // in vscodevim: does nothing, in vscode: does nothing (?) -> remap for lower panel toggeling
+        "<C-n>": true, // in vscodevim: moves cursor down -> in vscode: new file
+        "<C-m>": false, // in vscodevim: moves cursor down, in vscode: tabmovesfocus -> remap for line commenting
+    }
+}

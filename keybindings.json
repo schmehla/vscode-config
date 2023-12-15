@@ -1,0 +1,42 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "tab",
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.togglePanel",
+    },
+    {
+        "key": "ctrl+m", // interferes with tab moves focus, but no one needs this
+        "command": "editor.action.commentLine",
+    }
+]

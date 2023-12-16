@@ -35,7 +35,7 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 
 ## New vim commands for me to learn.
 
-[VSCode Cheat Sheet](https://cheatography.com/thissitesucks/cheat-sheets/vscode-vim/)
+[VSCode Vim Cheat Sheet](https://cheatography.com/thissitesucks/cheat-sheets/vscode-vim/)
 
 | key | what happens |
 | --- | --- |

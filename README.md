@@ -35,10 +35,13 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 
 ## New vim commands for me to learn.
 
+(VSCode Cheat Sheet)[https://cheatography.com/thissitesucks/cheat-sheets/vscode-vim/]
+
 | key | what happens |
 | --- | --- |
 | o | insert mode above | 
 | O | insert mode below |
+| gd | go to definition |
 | P | paste above / in front of |
 | * | go to next occurence of current word |
 | # | go to prev occurence of current word |

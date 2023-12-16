@@ -19,7 +19,6 @@ I use the [vim plugin](https://marketplace.visualstudio.com/items?itemName=vscod
 ## Default bindings on Ubuntu / Windows
 | key | what happens |
 | --- | --- |
-| \<alt-r> + esdf | up, left, down right |
 | \<win> + 123... | windows at position in taskbar |
 | \<ctrl> + l | focus url bar in browser |
 | / | focus search bar in google chrome |

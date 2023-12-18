@@ -38,5 +38,9 @@
     {
         "key": "ctrl+m", // interferes with tab moves focus, but no one needs this
         "command": "editor.action.commentLine",
+    },
+    {
+        "key": "ctrl+r", // interferes with window reload, but no one needs this
+        "command": "editor.action.rename",
     }
 ]

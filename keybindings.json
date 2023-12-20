@@ -32,7 +32,20 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+i",
+        "key": "ctrl+i t",
+        "command": "workbench.action.terminal.focus",
+    },
+    {
+        "key": "ctrl+i d",
+        "command": "workbench.debug.action.toggleRepl",
+        "when": "!inDebugRepl"
+    },
+    {
+        "key": "ctrl+i ctrl+i",
+        "command": "workbench.action.togglePanel",
+    },
+    {
+        "key": "ctrl+i i",
         "command": "workbench.action.togglePanel",
     },
     {

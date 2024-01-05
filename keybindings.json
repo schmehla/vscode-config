@@ -41,6 +41,15 @@
         "when": "!inDebugRepl"
     },
     {
+        "key": "ctrl+i c",
+        "command": "inlineChat.start",
+    },
+    {
+        "key": "enter",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+    },
+    {
         "key": "ctrl+i ctrl+i",
         "command": "workbench.action.togglePanel",
     },

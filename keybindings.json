@@ -5,8 +5,8 @@
     { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
     { "key": "shift+l", "command": "workbench.action.nextEditorInGroup" },
     { "key": "shift+h", "command": "workbench.action.previousEditorInGroup" },
-    { "key": "left",     "command": "workbench.action.moveEditorLeftInGroup" },
-    { "key": "right",   "command": "workbench.action.moveEditorRightInGroup" },
+    { "key": "left",     "command": "workbench.action.moveEditorLeftInGroup", "when": "editorFocus" },
+    { "key": "right",   "command": "workbench.action.moveEditorRightInGroup", "when": "editorFocus" },
     // {
     //     "key": "ctrl+i t",
     //     "command": "workbench.action.terminal.focus",

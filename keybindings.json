@@ -1,0 +1,66 @@
+[
+    { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
+    { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+    { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
+    { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
+    { "key": "shift+l", "command": "workbench.action.nextEditorInGroup" },
+    { "key": "shift+h", "command": "workbench.action.previousEditorInGroup" },
+    { "key": "left",     "command": "workbench.action.moveEditorLeftInGroup" },
+    { "key": "right",   "command": "workbench.action.moveEditorRightInGroup" },
+    // {
+    //     "key": "ctrl+i t",
+    //     "command": "workbench.action.terminal.focus",
+    // },
+    // {
+    //     "key": "ctrl+i d",
+    //     "command": "workbench.debug.action.toggleRepl",
+    //     "when": "!inDebugRepl"
+    // },
+    // {
+        //     "key": "ctrl+i p",
+        //     "command": "workbench.actions.view.problems"
+    // },
+
+    // TERMINAL
+    // { "key": "alt+v", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelRight", "workbench.action.togglePanel"], } },
+    { "key": "alt+h", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelBottom", "workbench.action.togglePanel"], } },
+    { "key": "alt+i", "command": "runCommands", "args": { "commands": ["workbench.action.toggleMaximizedPanel", "workbench.action.togglePanel"], } },
+    { "key": "alt+j", "command": "workbench.action.terminal.focusNext" },
+    { "key": "alt+k", "command": "workbench.action.terminal.focusPrevious" },
+    { "key": "alt+a", "command": "workbench.action.terminal.new" },
+    { "key": "alt+d", "command": "workbench.action.terminal.kill" },
+    { "key": "alt+r", "command": "runCommands", "args": { "commands": ["workbench.action.focusActiveEditorGroup", "workbench.action.terminal.rename", "workbench.action.terminal.focus"] }, "when": "terminalFocus" },
+    { "key": "alt+r", "command": "workbench.action.terminal.rename", "when": "!terminalFocus" },
+    // { "key": "alt+h", "command": "workbench.action.nextPanelView" },
+    // { "key": "alt+l", "command": "workbench.action.focusNextGroup" },
+
+    // EXPLORER
+    { "key": "ctrl+n", "args": {"commands": ["workbench.action.toggleSidebarVisibility", "workbench.action.focusSideBar"] }, "command": "runCommands", "when": "!sideBarVisible"},
+    { "key": "ctrl+n", "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible" },
+
+    { "key": "a", "command": "explorer.newFile", "when": "!inputFocus && explorerViewletFocus" },
+    { "key": "d", "command": "deleteFile", "when": "!inputFocus && explorerViewletFocus" },
+    { "key": "r", "command": "renameFile", "when": "!inputFocus && explorerViewletFocus" },
+
+
+    // FIND IN FILES
+    { "key": "escape", "command": "workbench.action.toggleAuxiliaryBar", "when": "auxiliaryBarVisible"},
+    { "key": "escape", "command": "workbench.action.focusActiveEditorGroup", "when": "!auxiliaryBarVisible && !editorFocus"},
+
+    // IPYNB
+    { "key": "escape", "command": "-notebook.cell.quitEdit", "when": "notebookEditorFocused && notebookOutputFocused" },
+    { "key": "escape", "command": "-notebook.cell.quitEdit", "when": "inputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'" },
+    { "key": "shift+escape", "command": "notebook.cell.quitEdit", "when": "notebookEditorFocused && notebookOutputFocused" },
+    { "key": "shift+escape", "command": "notebook.cell.quitEdit", "when": "inputFocus && notebookEditorFocused && vim.active && !editorHasSelection && !editorHoverVisible && vim.mode == 'Normal'" },
+    { "key": "shift+o", "command": "notebook.cell.insertCodeCellAboveAndFocusContainer", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "o", "command": "notebook.cell.insertCodeCellBelowAndFocusContainer", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "a", "command": "noop", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "u", "command": "undo", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "ctrl+r", "command": "redo", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "d+d", "args": { "commands": [ "notebook.cell.copy", "notebook.cell.delete" ] }, "command": "runCommands", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "y+y", "command": "notebook.cell.copy", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "p", "command": "notebook.cell.paste", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "shift+p", "command": "notebook.cell.pasteAbove", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "i", "command": "notebook.cell.edit", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
+    { "key": "ctrl+c", "command": "notebook.cell.cancelExecution", "when": "notebookEditorFocused"},
+]

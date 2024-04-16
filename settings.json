@@ -1,0 +1,106 @@
+{
+    "editor.formatOnSave": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.rulers": [
+        120
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": false,
+    "[jsonc]": {
+        "editor.formatOnSave": false
+    },
+
+    "vim.leader": "<Space>",
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjfö",
+    "vim.surround": true,
+    // normal mode: 
+    // y s <motion> <desired>
+    // d s <existing>
+    // c s <existing> <desired>
+    // visual mode:
+    // S <desired>
+
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.gdefault": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // navigation
+        // { "before": ["<S-h>"], "commands": [":bprevious"] }, // now in keybindings.json
+        // { "before": ["<S-l>"], "commands": [":bnext"] },
+        // { "before": ["<esc>"], "commands": [":noh"] },
+        { "before": ["<leader>", "x"], "commands": [":bd"] },
+        { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+        { "before": ["<leader>", "h"], "commands": [":split"] },
+        { "before": ["<leader>", "e"], "commands": ["workbench.explorer.fileView.focus"] },
+        { "before": ["<leader>", "t"], "commands": ["workbench.action.terminal.focus"] }, 
+        { "before": ["<leader>", "g", "i", "t"], "commands": ["workbench.view.scm"] }, // git
+        { "before": ["s"], "after": ["<leader>", "<leader>", "s"]}, // easy motion
+
+        // finding
+        { "before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["<leader>", "f", "g"], "commands": ["workbench.action.findInFiles"] },
+        { "before": ["<leader>", "f", "s"], "commands": ["workbench.action.showAllSymbols"] },
+
+
+        { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
+
+
+        // code editing
+        { "before": ["<leader>", "/"], "commands": ["editor.action.commentLine"] },
+
+        { "before": ["<leader>", "r", "p"], "after": [":", "%", "s", "/"] }, // replace
+        { "before": ["<leader>", "r", "n"], "commands": ["editor.action.rename"] },
+        { "before": ["<leader>", "j"], "after": ["J"] }, 
+        { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
+
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+
+        
+        { "before": ["("], "after": ["1", "5", "<C-e>", "1", "5", "j"] },
+        { "before": [")"], "after": ["1", "5", "<C-y>", "1", "5", "k"] },
+        { "before": ["J"], "after": ["1", "5", "j"] },
+        { "before": ["K"], "after": ["1", "5", "k"] },
+        
+        { "before": ["<Down>"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["<Up>"], "commands": ["editor.action.moveLinesUpAction"] },
+
+        // copilot
+        { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
+        { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
+
+        // debug
+        { "before": ["<leader>", "d", "t"], "commands": ["editor.debug.action.toggleBreakpoint"] },
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        { "before": ["j", "k"], "after": ["<esc>"] },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // TODO handle regular commands with selection 
+        { "before": ["<leader>", "/"], "commands": ["editor.action.commentLine"] },
+        { "before": ["<leader>", "j"], "after": ["J"] },
+        { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
+        { "before": [">"], "commands": ["editor.action.indentLines"] },
+        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+        { "before": ["J"], "after": ["1", "5", "j"] },
+        { "before": ["K"], "after": ["1", "5", "k"] },
+        { "before": ["<Down>"], "commands": ["editor.action.moveLinesDownAction"] },
+        { "before": ["<Up>"], "commands": ["editor.action.moveLinesUpAction"] },
+        { "before": ["s"], "after": ["<leader>", "<leader>", "s"]},
+        { "before": ["/"], "after": ["y", "/", "<C-v>"] },
+        { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
+    ],
+    "vim.handleKeys": {
+        "<C-d>": false,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-n>": false,
+        "<C-u>": false,
+    },
+    "notebook.lineNumbers": "on",
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+}

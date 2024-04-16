@@ -45,7 +45,7 @@
 
     // FIND IN FILES
     { "key": "escape", "command": "workbench.action.toggleAuxiliaryBar", "when": "auxiliaryBarVisible"},
-    { "key": "escape", "command": "workbench.action.focusActiveEditorGroup", "when": "!auxiliaryBarVisible && !editorFocus"},
+    { "key": "escape", "command": "workbench.action.focusActiveEditorGroup", "when": "!auxiliaryBarVisible && !editorFocus && !terminalFocus"},
 
     // IPYNB
     { "key": "escape", "command": "-notebook.cell.quitEdit", "when": "notebookEditorFocused && notebookOutputFocused" },

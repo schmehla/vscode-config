@@ -102,5 +102,4 @@
         "<C-u>": false,
     },
     "notebook.lineNumbers": "on",
-    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
 }

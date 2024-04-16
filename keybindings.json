@@ -21,6 +21,10 @@
         //     "command": "workbench.actions.view.problems"
     // },
 
+    { "key": "escape", "command": "workbench.action.focusActiveEditorGroup", "when": "!auxiliaryBarVisible && !editorFocus && !terminalFocus"},
+    { "key": "escape", "command": "inlineChat.close", "when": "inlineChatFocused"},
+    { "key": "enter", "command": "inlineChat.accept", "when": "inlineChatFocused"},
+
     // TERMINAL
     // { "key": "alt+v", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelRight", "workbench.action.togglePanel"], } },
     { "key": "alt+h", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelBottom", "workbench.action.togglePanel"], } },
@@ -45,7 +49,6 @@
 
     // FIND IN FILES
     { "key": "escape", "command": "workbench.action.toggleAuxiliaryBar", "when": "auxiliaryBarVisible"},
-    { "key": "escape", "command": "workbench.action.focusActiveEditorGroup", "when": "!auxiliaryBarVisible && !editorFocus && !terminalFocus"},
 
     // IPYNB
     { "key": "escape", "command": "-notebook.cell.quitEdit", "when": "notebookEditorFocused && notebookOutputFocused" },

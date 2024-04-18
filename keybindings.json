@@ -3,8 +3,8 @@
     { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
     { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
     { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
-    { "key": "shift+l", "command": "workbench.action.nextEditorInGroup" },
-    { "key": "shift+h", "command": "workbench.action.previousEditorInGroup" },
+    // { "key": "shift+l", "command": "workbench.action.nextEditorInGroup" },
+    // { "key": "shift+h", "command": "workbench.action.previousEditorInGroup" },
     { "key": "left",     "command": "workbench.action.moveEditorLeftInGroup", "when": "editorFocus" },
     { "key": "right",   "command": "workbench.action.moveEditorRightInGroup", "when": "editorFocus" },
     // {

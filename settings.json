@@ -29,8 +29,8 @@
     "vim.gdefault": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         // navigation
-        // { "before": ["<S-h>"], "commands": [":bprevious"] }, // now in keybindings.json
-        // { "before": ["<S-l>"], "commands": [":bnext"] },
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
         // { "before": ["<esc>"], "commands": [":noh"] },
         { "before": ["<leader>", "x"], "commands": [":bd"] },
         { "before": ["<leader>", "v"], "commands": [":vsplit"] },

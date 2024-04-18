@@ -102,4 +102,6 @@
         "<C-u>": false,
     },
     "notebook.lineNumbers": "on",
+    "workbench.layoutControl.enabled": "false",
+    "window.commandCenter": "false",
 }

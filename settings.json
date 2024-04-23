@@ -93,6 +93,7 @@
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]},
         { "before": ["/"], "after": ["y", "/", "<C-v>"] },
         { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
+        { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
     ],
     "vim.handleKeys": {
         "<C-d>": false,

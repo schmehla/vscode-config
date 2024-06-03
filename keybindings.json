@@ -65,5 +65,5 @@
     { "key": "p", "command": "notebook.cell.paste", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
     { "key": "shift+p", "command": "notebook.cell.pasteAbove", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
     { "key": "i", "command": "notebook.cell.edit", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
-    { "key": "ctrl+c", "command": "notebook.cell.cancelExecution", "when": "notebookEditorFocused"},
+    //{ "key": "ctrl+c", "command": "notebook.cell.cancelExecution", "when": "notebookEditorFocused"},
 ]

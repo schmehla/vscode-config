@@ -84,6 +84,7 @@
         { "before": ["<leader>", "/"], "commands": ["editor.action.commentLine"] },
         { "before": ["<leader>", "j"], "after": ["J"] },
         { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
+        { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
         { "before": [">"], "commands": ["editor.action.indentLines"] },
         { "before": ["<"], "commands": ["editor.action.outdentLines"] },
         { "before": ["J"], "after": ["1", "5", "j"] },
@@ -105,4 +106,5 @@
     "notebook.lineNumbers": "on",
     "workbench.layoutControl.enabled": "false",
     "window.commandCenter": "false",
+    "terminal.integrated.defaultProfile.linux": "zsh",
 }

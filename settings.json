@@ -104,7 +104,7 @@
         "<C-u>": false,
     },
     "notebook.lineNumbers": "on",
-    "workbench.layoutControl.enabled": "false",
-    "window.commandCenter": "false",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
 }

@@ -69,6 +69,10 @@
         { "before": ["<Down>"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["<Up>"], "commands": ["editor.action.moveLinesUpAction"] },
 
+        // go to next error
+        { "before": ["<leader>", "n"], "commands": ["editor.action.marker.next"] },
+        { "before": ["<leader>", "p"], "commands": ["editor.action.marker.prev"] },
+
         // copilot
         { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
         { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },

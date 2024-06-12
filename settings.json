@@ -33,17 +33,17 @@
         { "before": ["<S-l>"], "commands": [":bnext"] },
         // { "before": ["<esc>"], "commands": [":noh"] },
         { "before": ["<leader>", "x"], "commands": [":bd"] },
-        { "before": ["<leader>", "v"], "commands": [":vsplit"] },
-        { "before": ["<leader>", "h"], "commands": [":split"] },
+        // { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+        // { "before": ["<leader>", "h"], "commands": [":split"] },
         { "before": ["<leader>", "e"], "commands": ["workbench.explorer.fileView.focus"] },
         { "before": ["<leader>", "t"], "commands": ["workbench.action.terminal.focus"] }, 
-        { "before": ["<leader>", "g", "i", "t"], "commands": ["workbench.view.scm"] }, // git
+        // { "before": ["<leader>", "g", "i", "t"], "commands": ["workbench.view.scm"] }, // git
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]}, // easy motion
 
         // finding
-        { "before": ["<leader>", "f", "f"], "commands": ["workbench.action.quickOpen"] },
-        { "before": ["<leader>", "f", "g"], "commands": ["workbench.action.findInFiles"] },
-        { "before": ["<leader>", "f", "s"], "commands": ["workbench.action.showAllSymbols"] },
+        { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.quickOpen"] },
+        { "before": ["<leader>", "f"], "commands": ["workbench.action.findInFiles"] },
+        // { "before": ["<leader>", "f", "s"], "commands": ["workbench.action.showAllSymbols"] },
 
 
         { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
@@ -74,8 +74,8 @@
         { "before": ["<leader>", "p"], "commands": ["editor.action.marker.prev"] },
 
         // copilot
-        { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
-        { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
+        // { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
+        // { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
 
         // debug
         { "before": ["<leader>", "d", "t"], "commands": ["editor.debug.action.toggleBreakpoint"] },

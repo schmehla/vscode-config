@@ -1,8 +1,8 @@
 [
-    { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
-    { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
-    { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
-    { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
+    // { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
+    // { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+    // { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
+    // { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
     // { "key": "shift+l", "command": "workbench.action.nextEditorInGroup" },
     // { "key": "shift+h", "command": "workbench.action.previousEditorInGroup" },
     // { "key": "left",     "command": "workbench.action.moveEditorLeftInGroup", "when": "editorFocus" },
@@ -27,11 +27,13 @@
     
     // inline chat
     { "key": "alt+i", "command": "inlineChat.start",  },
+    { "key": "alt+i", "command": "inlineChat.close", "when": "inlineChatVisible" },
     { "key": "escape", "command": "inlineChat.close", "when": "inlineChatVisible" },
     { "key": "ctrl+enter", "command": "inlineChat.acceptChanges", "when": "inlineChatFocused" },
 
     // terminal inline chat
     { "key": "alt+i", "command": "workbench.action.terminal.chat.start", "when": "terminalFocus" },
+    { "key": "alt+i", "command": "workbench.action.terminal.chat.close", "when": "terminalChatFocus"},
     { "key": "escape", "command": "workbench.action.terminal.chat.close", "when": "terminalChatFocus"},
     { "key": "ctrl+enter", "command": "workbench.action.terminal.chat.insertCommand", "when": "terminalChatFocus"},
 
@@ -40,8 +42,10 @@
 
     // TERMINAL
     // { "key": "alt+v", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelRight", "workbench.action.togglePanel"], } },
-    { "key": "alt+n", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelBottom", "workbench.action.togglePanel"], } },
+    // { "key": "alt+n", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelBottom", "workbench.action.togglePanel"], } },
     { "key": "alt+m", "command": "runCommands", "args": { "commands": ["workbench.action.toggleMaximizedPanel", "workbench.action.togglePanel"], } },
+
+    
     { "key": "alt+j", "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
     { "key": "alt+k", "command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus" },
     { "key": "alt+a", "command": "workbench.action.terminal.new", "when": "terminalFocus" },
@@ -50,25 +54,27 @@
     // { "key": "alt+r", "command": "workbench.action.terminal.rename", "when": "!terminalFocus" },
     // { "key": "alt+h", "command": "workbench.action.nextPanelView" },
     // { "key": "alt+l", "command": "workbench.action.focusNextGroup" },
-
+    
     // EXPLORER
     { "key": "alt+e", "command": "workbench.explorer.fileView.focus"},
     // { "key": "ctrl+n", "args": {"commands": ["workbench.action.toggleSidebarVisibility", "workbench.action.focusSideBar"] }, "command": "runCommands", "when": "!sideBarVisible"},
     // { "key": "ctrl+n", "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible" },
-
+    
     { "key": "a", "command": "explorer.newFile", "when": "!inputFocus && explorerViewletFocus" },
     { "key": "d", "command": "deleteFile", "when": "!inputFocus && explorerViewletFocus" },
     { "key": "r", "command": "renameFile", "when": "!inputFocus && explorerViewletFocus" },
-
-
+    
+    
     // FIND IN FILES
     { "key": "escape", "command": "workbench.action.toggleAuxiliaryBar", "when": "auxiliaryBarVisible"},
-
+    
     // COPILOT
-    { "key": "alt+o", "command": "workbench.panel.chat.view.copilot.focus"},
+    { "key": "alt+h", "command": "workbench.panel.chat.view.copilot.focus"},
     { "key": "alt+a", "command": "workbench.action.chat.newChat", "when": "inChatInput" },
     { "key": "alt+j", "command": "workbench.action.chat.history", "when": "inChatInput" },
     { "key": "alt+k", "command": "workbench.action.chat.history", "when": "inChatInput" },
+    // when in terminal
+    { "key": "alt+h", "command": "runCommands", "args": { "commands": ["workbench.action.navigateLeft", "workbench.panel.chat.view.copilot.focus"], } },
 
 
     // IPYNB
@@ -85,6 +91,10 @@
     { "key": "y+y", "command": "notebook.cell.copy", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
     { "key": "p", "command": "notebook.cell.paste", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
     { "key": "shift+p", "command": "notebook.cell.pasteAbove", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"},
-    { "key": "i", "command": "notebook.cell.edit", "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused" },
+    {
+        "key": "i",
+        "command": "notebook.cell.edit",
+        "when": "notebookEditorFocused && !inputFocus && !notebookOutputInputFocused"
+    }
     // { "key": "ctrl+c", "command": "notebook.cell.cancelExecution", "when": "notebookEditorFocused"},
 ]

@@ -28,32 +28,30 @@
     "vim.hlsearch": true,
     "vim.gdefault": true,
     "vim.normalModeKeyBindingsNonRecursive": [
+        // { "before": ["<esc>"], "commands": [":noh"] },
+        // { "before": ["<leader>", "v"], "commands": [":vsplit"] },
+        // { "before": ["<leader>", "h"], "commands": [":split"] },
+        // { "before": ["<leader>", "g", "i", "t"], "commands": ["workbench.view.scm"] }, // git
+        // { "before": ["<leader>", "f", "s"], "commands": ["workbench.action.showAllSymbols"] },
+        // { "before": ["<leader>", "r", "p"], "after": [":", "%", "s", "/"] }, // replace
+
         // navigation
         { "before": ["<S-h>"], "commands": [":bprevious"] },
         { "before": ["<S-l>"], "commands": [":bnext"] },
-        // { "before": ["<esc>"], "commands": [":noh"] },
         { "before": ["<leader>", "x"], "commands": [":bd"] },
-        // { "before": ["<leader>", "v"], "commands": [":vsplit"] },
-        // { "before": ["<leader>", "h"], "commands": [":split"] },
         { "before": ["<leader>", "e"], "commands": ["workbench.explorer.fileView.focus"] },
         { "before": ["<leader>", "t"], "commands": ["workbench.action.terminal.focus"] }, 
-        // { "before": ["<leader>", "g", "i", "t"], "commands": ["workbench.view.scm"] }, // git
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]}, // easy motion
+        { "before": [":"], "commands": ["workbench.action.showCommands"] },
 
         // finding
         { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.quickOpen"] },
         { "before": ["<leader>", "f"], "commands": ["workbench.action.findInFiles"] },
-        // { "before": ["<leader>", "f", "s"], "commands": ["workbench.action.showAllSymbols"] },
-
-
-        { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
-
 
         // code editing
         { "before": ["<leader>", "/"], "commands": ["editor.action.commentLine"] },
 
-        { "before": ["<leader>", "r", "p"], "after": [":", "%", "s", "/"] }, // replace
-        { "before": ["<leader>", "r", "n"], "commands": ["editor.action.rename"] },
+        { "before": ["<leader>", "r"], "commands": ["editor.action.rename"] },
         { "before": ["<leader>", "j"], "after": ["J"] }, 
         { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
 
@@ -69,8 +67,10 @@
         { "before": ["<Down>"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["<Up>"], "commands": ["editor.action.moveLinesUpAction"] },
 
+        { "before": ["p"], "after": [ "p", "g", "v", "y" ] },
+
         // go to next error
-        { "before": ["<leader>", "n"], "commands": ["editor.action.marker.next"] },
+        { "before": ["<error>", "n"], "commands": ["editor.action.marker.next"] },
         { "before": ["<leader>", "p"], "commands": ["editor.action.marker.prev"] },
 
         // copilot
@@ -85,6 +85,8 @@
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // TODO handle regular commands with selection 
+        { "before": [":"], "commands": ["workbench.action.showCommands"] },
+        { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.quickOpen"] },
         { "before": ["<leader>", "/"], "commands": ["editor.action.commentLine"] },
         { "before": ["<leader>", "j"], "after": ["J"] },
         { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
@@ -96,9 +98,9 @@
         { "before": ["<Down>"], "commands": ["editor.action.moveLinesDownAction"] },
         { "before": ["<Up>"], "commands": ["editor.action.moveLinesUpAction"] },
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]},
-        { "before": ["/"], "after": ["y", "/", "<C-v>"] },
         { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
         { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
+        // { "before": ["/"], "after": ["y", "/", "<C-v>"] },
     ],
     "vim.handleKeys": {
         "<C-d>": false,
@@ -106,6 +108,7 @@
         "<C-z>": false,
         "<C-n>": false,
         "<C-u>": false,
+        "<C-f>": false,
     },
     "notebook.lineNumbers": "on",
     "workbench.layoutControl.enabled": false,

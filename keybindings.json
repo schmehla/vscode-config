@@ -44,7 +44,7 @@
     // { "key": "alt+v", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelRight", "workbench.action.togglePanel"], } },
     // { "key": "alt+n", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelBottom", "workbench.action.togglePanel"], } },
     { "key": "alt+m", "command": "runCommands", "args": { "commands": ["workbench.action.toggleMaximizedPanel", "workbench.action.togglePanel"], } },
-
+    { "key": "alt+h", "command": "runCommands", "args": { "commands": ["workbench.action.positionPanelBottom", "workbench.action.togglePanel"], } },
     
     { "key": "alt+j", "command": "workbench.action.terminal.focusNext", "when": "terminalFocus" },
     { "key": "alt+k", "command": "workbench.action.terminal.focusPrevious", "when": "terminalFocus" },
@@ -69,12 +69,12 @@
     { "key": "escape", "command": "workbench.action.toggleAuxiliaryBar", "when": "auxiliaryBarVisible"},
     
     // COPILOT
-    { "key": "alt+h", "command": "workbench.panel.chat.view.copilot.focus"},
+    { "key": "alt+o", "command": "workbench.panel.chat.view.copilot.focus"},
     { "key": "alt+a", "command": "workbench.action.chat.newChat", "when": "inChatInput" },
     { "key": "alt+j", "command": "workbench.action.chat.history", "when": "inChatInput" },
     { "key": "alt+k", "command": "workbench.action.chat.history", "when": "inChatInput" },
     // when in terminal
-    { "key": "alt+h", "command": "runCommands", "args": { "commands": ["workbench.action.navigateLeft", "workbench.panel.chat.view.copilot.focus"], } },
+    { "key": "alt+o", "command": "runCommands", "args": { "commands": ["workbench.action.navigateLeft", "workbench.panel.chat.view.copilot.focus"], } },
 
 
     // IPYNB

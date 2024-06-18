@@ -68,6 +68,7 @@
         { "before": ["<Up>"], "commands": ["editor.action.moveLinesUpAction"] },
 
         { "before": ["p"], "after": [ "p", "g", "v", "y" ] },
+        { "before": ["g", "r"], "commands": ["references-view.findReferences"] },
 
         // go to next error
         { "before": ["<error>", "n"], "commands": ["editor.action.marker.next"] },

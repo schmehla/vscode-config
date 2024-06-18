@@ -14,7 +14,7 @@
 
     "vim.leader": "<Space>",
     "vim.easymotion": true,
-    "vim.easymotionKeys": "jfkdls",
+    "vim.easymotionKeys": "jfkdlsieurmvnc",
     "vim.surround": true,
     // normal mode: 
     // y s <motion> <desired>

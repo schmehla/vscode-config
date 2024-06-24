@@ -105,6 +105,7 @@
         { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
         { "before": ["+"], "commands": ["editor.action.smartSelect.expand"] },
         { "before": ["-"], "commands": ["editor.action.smartSelect.shrink"] },
+        { "before": ["<leader>", "x"], "commands": [":bd"] },
         // { "before": ["/"], "after": ["y", "/", "<C-v>"] },
     ],
     "vim.handleKeys": {

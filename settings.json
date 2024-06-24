@@ -43,6 +43,8 @@
         { "before": ["<leader>", "t"], "commands": ["workbench.action.terminal.focus"] }, 
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]}, // easy motion
         { "before": [":"], "commands": ["workbench.action.showCommands"] },
+        { "before": ["+"], "commands": ["editor.action.smartSelect.expand"] },
+        { "before": ["-"], "commands": ["editor.action.smartSelect.shrink"] },
 
         // finding
         { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.quickOpen"] },
@@ -101,6 +103,8 @@
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]},
         { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
         { "before": ["<leader>", "c"], "commands": ["workbench.panel.chat.view.copilot.focus"] },
+        { "before": ["+"], "commands": ["editor.action.smartSelect.expand"] },
+        { "before": ["-"], "commands": ["editor.action.smartSelect.shrink"] },
         // { "before": ["/"], "after": ["y", "/", "<C-v>"] },
     ],
     "vim.handleKeys": {

@@ -42,9 +42,9 @@
         { "before": ["<leader>", "e"], "commands": ["workbench.explorer.fileView.focus"] },
         { "before": ["<leader>", "t"], "commands": ["workbench.action.terminal.focus"] }, 
         { "before": ["s"], "after": ["<leader>", "<leader>", "s"]}, // easy motion
-        { "before": [":"], "commands": ["workbench.action.showCommands"] },
         { "before": ["+"], "commands": ["editor.action.smartSelect.expand"] },
         { "before": ["-"], "commands": ["editor.action.smartSelect.shrink"] },
+        { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
 
         // finding
         { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.quickOpen"] },
@@ -55,7 +55,7 @@
 
         { "before": ["<leader>", "r"], "commands": ["editor.action.rename"] },
         { "before": ["<leader>", "j"], "after": ["J"] }, 
-        { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
+        // { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
 
         { "before": [">"], "commands": ["editor.action.indentLines"] },
         { "before": ["<"], "commands": ["editor.action.outdentLines"] },
@@ -88,12 +88,12 @@
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // TODO handle regular commands with selection 
-        { "before": [":"], "commands": ["workbench.action.showCommands"] },
+        //{ "before": [":"], "commands": ["workbench.action.showCommands"] },
         { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.quickOpen"] },
         { "before": ["<leader>", "/"], "commands": ["editor.action.commentLine"] },
         { "before": ["<leader>", "j"], "after": ["J"] },
         { "before": ["<leader>", "i"], "commands": ["inlineChat.start"] },
-        { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
+        // { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
         { "before": [">"], "commands": ["editor.action.indentLines"] },
         { "before": ["<"], "commands": ["editor.action.outdentLines"] },
         { "before": ["J"], "after": ["1", "5", "j"] },
@@ -107,6 +107,7 @@
         { "before": ["-"], "commands": ["editor.action.smartSelect.shrink"] },
         { "before": ["<leader>", "x"], "commands": [":bd"] },
         // { "before": ["/"], "after": ["y", "/", "<C-v>"] },
+        { "before": ["<leader>", ":"], "commands": ["workbench.action.showCommands"] },
     ],
     "vim.handleKeys": {
         "<C-d>": false,
